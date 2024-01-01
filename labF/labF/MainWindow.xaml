@@ -1,0 +1,21 @@
+﻿<Window x:Class="labf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Courses Form" Height="400" Width="600">
+    <Grid>
+        <StackPanel>
+            <Border Background="#3498db" Padding="10" Margin="0,0,0,20">
+                <TextBlock Text="Courses Form" Foreground="White" FontSize="20"/>
+            </Border>
+            <DataGrid Name="coursesDataGrid" AutoGenerateColumns="True" Height="200" Margin="10"/>
+            <StackPanel Margin="10">
+                <Label Content="Course Name:"/>
+                <TextBox Name="courseNameTextBox" Width="200" Margin="0,5,0,10"/>
+
+                <Label Content="Credits:"/>
+                <TextBox Name="creditsTextBox" Width="50" Margin="0,0,0,10"/>
+                <Button Content="Add Course" Click="AddCourse_Click" Background="#2ecc71" Foreground="White" Margin="0,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

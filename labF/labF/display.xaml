@@ -1,0 +1,28 @@
+﻿<Window x:Class="labf.display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Student Courses Form" Height="500" Width="800">
+    <Grid>
+        <StackPanel>
+
+            <Border Background="#FF2D3B47" Padding="10" Margin="0,0,0,20">
+                <TextBlock Text="Student Courses" Foreground="White" FontSize="20"/>
+            </Border>
+            <StackPanel Margin="10">
+                <Label Content="Search Students:"/>
+                <TextBox Name="searchStudentsTextBox" Width="200" Margin="0,5,0,10"
+                         TextChanged="SearchStudentsTextBox_TextChanged"/>
+
+                <DataGrid Name="studentsDataGrid" AutoGenerateColumns="True" Height="200"/>
+            </StackPanel>
+
+            <StackPanel Margin="10">
+                <Label Content="Search Courses:"/>
+                <TextBox Name="searchCoursesTextBox" Width="200" Margin="0,5,0,10"
+                         TextChanged="SearchCoursesTextBox_TextChanged"/>
+
+                <DataGrid Name="coursesDataGrid" AutoGenerateColumns="True" Height="200"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
